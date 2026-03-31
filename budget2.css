@@ -1,0 +1,136 @@
+body {
+  background-color: rgb(65, 65, 250);
+  padding: 0;
+  margin: 0;
+}
+section {
+  background-color: white;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem 2rem;
+  font-family: "Google Sans", sans-serif;
+  color: rgb(51, 51, 104);
+  border-radius: 20px;
+  margin: auto;
+}
+main {
+  display: flex;
+  gap: 4rem;
+}
+.budget {
+  border: 2px solid green;
+  background-color: rgb(230, 228, 228);
+  width: fit-content;
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.expense {
+  border: 2px solid red;
+  background-color: rgb(230, 228, 228);
+  width: fit-content;
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+}
+.budget input {
+  border: 2px solid green;
+  width: 20rem;
+  height: 2rem;
+}
+.expense input {
+  border: 2px solid red;
+  width: 20rem;
+  height: 2rem;
+}
+.expense button {
+  background-color: transparent;
+  color: red;
+  border: 2px solid red;
+  padding: 10px;
+}
+.budget button {
+  background-color: transparent;
+  color: green;
+  border: 2px solid green;
+  padding: 10px;
+}
+.expense button:hover,
+.budget button:hover {
+  scale: 0.9;
+  cursor: pointer;
+}
+.budget-line {
+  display: flex;
+  gap: 3rem;
+}
+.budget-line > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.budget-line h3 {
+  font-size: 17px;
+  font-weight: 800;
+}
+.budget-line > div > div {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.budget-line > div > i {
+  font-size: 40px;
+}
+#red {
+  color: red;
+}
+
+#green {
+  color: green;
+}
+.display > div {
+  display: flex;
+  gap: 3rem;
+}
+
+.display {
+  background-color: rgb(237, 235, 235);
+  border: 2px solid rgb(230, 228, 228);
+  margin-top: 4.5rem;
+  padding: 1rem;
+  height: fit-content;
+  width: fit-content;
+}
+
+.displayExpenses {
+  display: flex;
+  gap: 1rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  justify-content: left;
+  text-decoration: none;
+  margin-left: 0;
+}
+.displayExpenses > p {
+  width: 150px;
+  font-weight: bolder;
+}
+
+.displayExpenses > button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.displayExpenses > button:hover {
+  scale: 0.9;
+  cursor: pointer;
+}
+
+#expensesol {
+  margin-top: 1rem;
+  color: red;
+  padding-left: 0;
+}
