@@ -1,0 +1,158 @@
+body {
+  background-color: navy;
+}
+
+section {
+  background-color: white;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5rem 2rem;
+  font-family: "Google Sans", sans-serif;
+  color: rgb(61, 61, 98);
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 2rem;
+  box-shadow: 1px 2px 76px -14px rgba(47, 52, 53, 0.99);
+  -webkit-box-shadow: 1px 2px 76px -14px rgba(47, 52, 53, 0.99);
+  -moz-box-shadow: 1px 2px 76px -14px rgba(47, 52, 53, 0.99);
+}
+
+main {
+  display: flex;
+  gap: 4rem;
+}
+
+.budget,
+.expense {
+  border: 2px solid green;
+  background-color: rgb(237, 235, 235);
+  padding: 0.5rem;
+  width: fit-content;
+  margin-bottom: 3rem;
+}
+
+.budget input,
+.expense input {
+  border: 2px solid green;
+  width: 20rem;
+  height: 2rem;
+}
+
+.budget button {
+  background-color: transparent;
+  color: green;
+  border: 2px solid green;
+  padding: 10px;
+}
+
+.expense {
+  border: 2px solid red;
+}
+
+.expense input {
+  border: 2px solid red;
+}
+
+.expense button {
+  background-color: transparent;
+  color: red;
+  border: 2px solid red;
+  padding: 10px;
+}
+
+.expense button:hover,
+.budget button:hover {
+  scale: 0.9;
+  cursor: pointer;
+}
+.budget-expense {
+  display: flex;
+  gap: 3rem;
+}
+
+.budget-expense > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.budget-expense h2 {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.budget-expense > div > i {
+  font-size: 40px;
+}
+
+.budget-expense > div > div {
+  font-size: 30px;
+  font-weight: bolder;
+}
+main > div:nth-of-type(2) {
+  padding-top: 0;
+  position: relative;
+  top: -1rem;
+}
+
+.display {
+  background-color: rgb(237, 235, 235);
+  border: 2px solid rgb(124, 124, 124);
+  margin-top: 4.5rem;
+  padding: 1rem;
+  height: fit-content;
+  width: fit-content;
+}
+
+.display > div {
+  display: flex;
+  gap: 3rem;
+}
+
+.display-exp {
+  display: flex;
+  gap: 1rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  justify-content: left;
+  text-decoration: none;
+  margin-left: 0;
+}
+
+.display-exp > p {
+  width: 150px;
+  font-weight: bolder;
+}
+
+.display-exp > button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.display-exp > button:hover {
+  scale: 0.9;
+  cursor: pointer;
+}
+
+span {
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+#red {
+  color: red;
+}
+
+#green {
+  color: green;
+}
+
+#expDisplay {
+  margin-top: 1rem;
+  color: red;
+  padding-left: 0;
+}

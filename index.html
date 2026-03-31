@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jsclass.css">
+</head>
+<body>
+    <header>
+      <h1>DOM</h1>
+    </header>
+
+    <section class="container">
+      <form id="my-form">
+        <h1>Add User</h1>
+        <div class="msg"></div>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" id="email">
+        </div>
+        <input class="btn" type="submit" value="Submit">
+      </form>
+
+      <ul id="users"></ul>
+      
+      <ul class="items">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+      </ul>
+    </section>
+    
+
+    <script>
+         function celsiusToKelvin(celsius) {
+          return celsius + 273.15;
+         }
+         function convert() {
+           var celsiusValue = parseFloat(document.getElementById("celsiusInput").value);
+           var KelvinValue = celsiusToKelvin(celsiusValue);
+
+           document.getElementById("result").innerHTML = "Result: " + KelvinValue + " K "
+         }
+
+    </script>
+
+
+     <h1 id="date"></h1>
+     <h1 id="switch"></h1>
+    
+    <h1 style="color: chartreuse;">Welcome to Javascript</h1>
+     <!--  -->
+    <h1>CONVERSION SCALE</h1>
+    <h2>CELSIUS - KELVIN</h2>
+    <label for="celsiusInput">Enter Value (celsius):</label>
+    <input type="text" id="celsiusInput"><br>
+    <button onclick="convert()">Convert</button>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

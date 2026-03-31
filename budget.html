@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="budget.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <section>
+        <h1>BUDGET APP</h1>
+        <main>
+            <div>
+                <div class="budget">
+                    <h3>Please Enter Your Budget</h3>
+                    <input type="number" id="budget" />
+                    <br /><br /><button type="button" id="budgetBtn">Add Budget</button>
+                </div>
+
+                <div class="expense">
+                    <h3>Enter Your Expense</h3>
+                    <input type="text" id="expense" />
+                    <h3>Please Enter Your Expense Amount</h3>
+                    <input type="number" id="expense-Amt" />
+                    <br /><br /><button type="button" id="expenseBtn">
+                        Add Expense
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class="budget-expense">
+                    <div>
+                        <h2>BUDGET</h2>
+                        <i class="fa-solid fa-sack-dollar"></i>
+                        <div id="green">
+                            <i class="fa-solid fa-naira-sign"></i><span id="total-budget">0</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>EXPENSES</h2>
+                        <i class="fa-solid fa-money-bill-1-wave"></i>
+                        <div id="red">
+                            <i class="fa-solid fa-naira-sign"></i><span id="total-Expense">0</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>BALANCE</h2>
+                        <i class="fa-solid fa-naira-sign"></i>
+                        <div>
+                            <i class="fa-solid fa-naira-sign"></i><span id="balanceEl">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="display">
+                    <div class="display-exp">
+                        <h3>Expense Title</h3>
+                        <h3>Expense Value</h3>
+                    </div>
+                    <ol id="expDisplay"></ol>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+<script src="budget.js"></script>
+
+</html>
